@@ -1,6 +1,6 @@
 # genai-sql-assistant
-
-## Building a Generative AI-Powered SQL Assistant using Streamlit, LangChain, and MySQL
+# Title
+Building a Generative AI-Powered SQL Assistant using Streamlit, LangChain, and MySQL
 
 # Overview
 This project demonstrates how to build a Generative AI SQL Assistant that converts natural language questions into SQL queries, executes them against a MySQL database, and displays the results in a user-friendly Streamlit interface.

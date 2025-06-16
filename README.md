@@ -32,8 +32,8 @@ This project demonstrates how to build a Generative AI SQL Assistant that conver
 # How to Run
 
 # 1. Clone the repo and navigate
-git clone https://github.com/veerababu558/sql-genai-assistant.git
-cd sql-genai-assistant
+- git clone https://github.com/veerababu558/sql-genai-assistant.git
+- cd sql-genai-assistant
 
 # 2. Install dependencies
 pip install -r requirements.txt

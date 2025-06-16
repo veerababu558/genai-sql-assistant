@@ -63,4 +63,8 @@ streamlit run MySQLQueryGenerator.py
 - "List all products with price above $100"
 - "Which customers made more than 5 orders?"
 
-  ![https://github.com/veerababu558/genai-sql-assistant/blob/main/Screenshot%202025-06-16%20081247.png]
+  ![](https://github.com/veerababu558/genai-sql-assistant/blob/main/Screenshot%202025-06-16%20171243.png)
+  ![](https://github.com/veerababu558/genai-sql-assistant#:~:text=Screenshot%202025%2D06%2D16%20171425.png)
+  ![](https://github.com/veerababu558/genai-sql-assistant#:~:text=Screenshot%202025%2D06%2D16%20171547.png)
+  ![](https://github.com/veerababu558/genai-sql-assistant#:~:text=Screenshot%202025%2D06%2D16%20171721.png)
+  ![](https://github.com/veerababu558/genai-sql-assistant#:~:text=Screenshot%202025%2D06%2D16%20171810.png)

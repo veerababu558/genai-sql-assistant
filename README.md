@@ -14,20 +14,20 @@ This project demonstrates how to build a Generative AI SQL Assistant that conver
 - Python (pymysql, pandas, dotenv) – For backend logic and database connection
 
 # Key Features
-✅ Integrated OpenAI API to convert user questions into SQL queries
-✅ Dynamic schema detection – fetches table structures from MySQL automatically (no hardcoding)
-✅ Role-based access control:
+- Integrated OpenAI API to convert user questions into SQL queries
+- Dynamic schema detection – fetches table structures from MySQL automatically (no hardcoding)
+- Role-based access control:
     Viewer: Can only run safe SELECT queries
     Admin: Can run full SQL (e.g., INSERT, UPDATE, DELETE)
-✅ Query history tracking – previously run queries and sample results are stored and viewable
-✅ Simple and clean Streamlit UI for interactive SQL generation and execution
+- Query history tracking – previously run queries and sample results are stored and viewable
+- Simple and clean Streamlit UI for interactive SQL generation and execution
 
 # Prerequisites
 
-OpenAI API key
-MySQL database with sample data
-Python 3.9+
-Packages: streamlit, langchain, langchain_openai, pymysql, python-dotenv, pandas
+- OpenAI API key
+- MySQL database with sample data
+- Python 3.9+
+- Packages: streamlit, langchain, langchain_openai, pymysql, python-dotenv, pandas
 
 # How to Run
 
@@ -58,6 +58,6 @@ streamlit run MySQLQueryGenerator.py
      
 # Example Queries to Try
 
-Show total sales per customer
-List all products with price above $100
-Which customers made more than 5 orders?
+- "Show total sales per customer"
+- "List all products with price above $100"
+- "Which customers made more than 5 orders?"

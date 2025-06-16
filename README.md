@@ -17,7 +17,6 @@ Python (pymysql, pandas, dotenv) – For backend logic and database interaction
 ✅ Integrated OpenAI API to convert user questions into SQL queries
 ✅ Dynamic schema detection – fetches table structures from MySQL automatically (no hardcoding)
 ✅ Role-based access control:
-
     Viewer: Can only run safe SELECT queries
     Admin: Can run full SQL (e.g., INSERT, UPDATE, DELETE)
 ✅ Query history tracking – previously run queries and sample results are stored and viewable

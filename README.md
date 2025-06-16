@@ -3,15 +3,15 @@
 Building a Generative AI-Powered SQL Assistant using Streamlit, LangChain, and MySQL
 
 # Overview
-This project demonstrates how to build a Generative AI SQL Assistant that converts natural language questions into SQL queries, executes them against a MySQL database, and displays the results in a user-friendly Streamlit interface.
+This project demonstrates how to build a Generative AI SQL Assistant that converts natural language questions into SQL queries, executes them against a MySQL database, and displays the results in Streamlit interface.
 
 # Technologies Used
 
-Streamlit – For building the web-based UI
-LangChain – To interact with OpenAI’s LLM in a modular and structured way
-OpenAI API – To generate SQL queries from natural language prompts
-MySQL – For data storage and querying
-Python (pymysql, pandas, dotenv) – For backend logic and database interaction
+- Streamlit – For building the web-based UI
+- LangChain – To interact with OpenAI’s LLM in a modular and structured way
+- OpenAI API – To generate SQL queries from natural language prompts
+- MySQL – For data storage and querying
+- Python (pymysql, pandas, dotenv) – For backend logic and database connection
 
 # Key Features
 ✅ Integrated OpenAI API to convert user questions into SQL queries

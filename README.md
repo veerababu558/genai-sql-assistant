@@ -62,3 +62,5 @@ streamlit run MySQLQueryGenerator.py
 - "Show total sales per customer"
 - "List all products with price above $100"
 - "Which customers made more than 5 orders?"
+
+  ![https://github.com/veerababu558/genai-sql-assistant/blob/main/Screenshot%202025-06-16%20081247.png]

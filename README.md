@@ -32,7 +32,7 @@ This project demonstrates how to build a Generative AI SQL Assistant that conver
 # How to Run
 
 # 1. Clone the repo and navigate
-git clone https://github.com/your-username/sql-genai-assistant.git
+git clone https://github.com/veerababu558/sql-genai-assistant.git
 cd sql-genai-assistant
 
 # 2. Install dependencies

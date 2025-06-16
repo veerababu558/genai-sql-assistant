@@ -17,10 +17,11 @@ This project demonstrates how to build a Generative AI SQL Assistant that conver
 - Integrated OpenAI API to convert user questions into SQL queries
 - Dynamic schema detection – fetches table structures from MySQL automatically (no hardcoding)
 - Role-based access control:
-    Viewer: Can only run safe SELECT queries
+    Viewer: Can only run SELECT queries
     Admin: Can run full SQL (e.g., INSERT, UPDATE, DELETE)
 - Query history tracking – previously run queries and sample results are stored and viewable
 - Simple and clean Streamlit UI for interactive SQL generation and execution
+- Allows Admin users to download query results as a .csv file.
 
 # Prerequisites
 

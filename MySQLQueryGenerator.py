@@ -10,10 +10,10 @@ import pandas as pd
 
 # Load your API key here 
 
-# ✅ LLM setup
+# LLM setup
 llm = ChatOpenAI(model_name="gpt-3.5-turbo", temperature=0)
 
-# ✅ Connect to DB and build schema string
+# Connect to DB and build schema string
 def get_full_schema():
     try:
         conn = pymysql.connect(
@@ -34,7 +34,7 @@ def get_full_schema():
     except Exception as e:
         return f"⚠️ Error loading schema: {e}"
 
-# ✅ SQL generator
+#  SQL generator
 def generate_sql(user_question, schema):
     try:
         prompt = f"""
@@ -52,12 +52,12 @@ Write only the SQL query.
     except Exception as e:
         return f"⚠️ Error: {e}"
 
-# ✅ SQL safety checker
+#  SQL safety checker
 def is_safe_sql(sql):
     unsafe_keywords = ["delete", "update", "insert", "drop", "alter", "truncate", "replace", "create"]
     return not any(sql.strip().lower().startswith(keyword) for keyword in unsafe_keywords)
 
-# ✅ SQL executor
+# SQL executor
 def run_sql_query(sql):
     try:
         conn = pymysql.connect(
@@ -71,15 +71,15 @@ def run_sql_query(sql):
     except Exception as e:
         return f"⚠️ Failed to execute SQL: {e}"
 
-# ✅ Streamlit UI
+#  Streamlit UI
 st.set_page_config(page_title="GenAI SQL Assistant", layout="wide")
 st.title("🧠 GenAI SQL Assistant")
 
-# ✅ Role-based access
+#  Role-based access
 role = st.sidebar.selectbox("Select your role", ["viewer", "admin"])
-read_only = st.sidebar.checkbox("🔒 Read-Only Mode", value=True if role == "viewer" else False)
+read_only = st.sidebar.checkbox("  Read-Only Mode", value=True if role == "viewer" else False)
 
-# ✅ Query history & latest result
+#  Query history & latest result
 if "query_history" not in st.session_state:
     st.session_state.query_history = []
 if "latest_df" not in st.session_state:
@@ -100,10 +100,10 @@ if user_input:
                 sql = generate_sql(user_input, schema)
                 st.code(sql, language="sql")
 
-                st.subheader("📊 Executing SQL...")
+                st.subheader(" Executing SQL...")
 
                 if read_only and not is_safe_sql(sql):
-                    st.error("❌ Unsafe SQL detected! Execution blocked (e.g. DELETE, UPDATE, etc.)")
+                    st.error(" Unsafe SQL detected! Execution blocked (e.g. DELETE, UPDATE, etc.)")
                 else:
                     result = run_sql_query(sql)
 
@@ -111,7 +111,7 @@ if user_input:
                         st.dataframe(result)
                         st.session_state.latest_df = result  # store for CSV export
 
-                        # ✅ Store to query history
+                        #  Store to query history
                         st.session_state.query_history.append({
                             "question": user_input,
                             "sql": sql,
@@ -120,12 +120,12 @@ if user_input:
                     else:
                         st.error(result)
 
-# ✅ CSV Export
+#  CSV Export
 if role == "admin" and st.session_state.latest_df is not None:
     csv = st.session_state.latest_df.to_csv(index=False).encode('utf-8')
-    st.download_button("📥 Download Results as CSV", data=csv, file_name="query_result.csv", mime='text/csv')
+    st.download_button("  Download Results as CSV", data=csv, file_name="query_result.csv", mime='text/csv')
 
-# ✅ Show Query History
+#  Show Query History
 st.sidebar.header("🕘 Query History")
 if st.session_state.query_history:
     for i, entry in enumerate(reversed(st.session_state.query_history), 1):

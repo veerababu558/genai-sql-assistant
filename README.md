@@ -90,6 +90,6 @@ streamlit run MySQLQueryGenerator.py
 
 # Acknowledgements
 
-As part of my learning in Generative AI , I  built this project using Langchain,MySQL and Streamlit. Certain parts of the code, structure and prompts were guided and refined with the help of ChatGPT.
+As part of my learning in Generative AI , I  built this project using Langchain,MySQL and Streamlit. Certain parts of the code and structure were guided with the help of ChatGPT.
 
 I have enhanched certain functionlaties such as query history,dynamic schema detection,role based access control,SQL query saftey validation, and CSV export.

@@ -49,6 +49,9 @@ DB_NAME=your-database
 # 4. Run the app
 streamlit run MySQLQueryGenerator.py
 
+Below is the Project structure
+The .env file is not included in the reposiorty due to GitHub security restrictions.
+
 ![](https://github.com/veerababu558/genai-sql-assistant/blob/main/Screenshot%202025-06-16%20202219.png)
      
 # Example Queries to Try

@@ -52,7 +52,7 @@ streamlit run MySQLQueryGenerator.py
 📦sql-genai-assistant/
  ┣ 📄 MySQLQueryGenerator.py
  ┣ 📄 requirements.txt
- ┣ 📄 .env
+ ┣ 📄 .env ----> Unable to upload the file due to GitHub security restrictions.
  ┗ 📁 sample_data/
      ┣ 📄 create_tables.sql
      ┗ 📄 insert_data.sql

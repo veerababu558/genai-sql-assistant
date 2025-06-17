@@ -63,12 +63,33 @@ streamlit run MySQLQueryGenerator.py
 - "List all products with price above $100"
 - "Which customers made more than 5 orders?"
 
+  Below is a screenshot showing the result for the query "Show total sales per customer" executed by a user with the Viewer role.
+
   ![](https://github.com/veerababu558/genai-sql-assistant/blob/main/Screenshot%202025-06-16%20171243.png)
+
+  Below is a screenshot showing an error when the delete query is executed by  "Viewer" role.
   
   ![](https://github.com/veerababu558/genai-sql-assistant/blob/main/Screenshot%202025-06-16%20171425.png)
   
+  Below is a screenshot showing the query history tracking.
+  
   ![](https://github.com/veerababu558/genai-sql-assistant/blob/main/Screenshot%202025-06-16%20171547.png)
+
+  Below is a screenshot showing the CSV download option for "Admin" role
   
   ![](https://github.com/veerababu558/genai-sql-assistant/blob/main/Screenshot%202025-06-16%20171721.png)
+
+  Below is a screenshot showing an error encountered by by "Admin" role when executing a delete query.  Application attempted to delete data from a table,but it failed due to constraints imposed on the table.
   
   ![](https://github.com/veerababu558/genai-sql-assistant/blob/main/Screenshot%202025-06-16%20171810.png)
+
+# Further enhancments 
+  - Deploy the application using AWS cloud native services such as EC2,RDS, and App runner.
+  - Implement user authentication  using AWS Cognito.
+  - Configure and mange user roles in the database,and dyanmically apply roles based on the loggined-in user.
+
+# Acknowledgements
+
+As part of my learning in Generative AI , I  built this project using Langchain,MySQL and Streamlit. Certain parts of the code, structure and prompts were guided and refined with the help of ChatGPT.
+
+I have enhanched certain functionlaties such as query history,dynamic schema detection,role based access control,SQL query saftey validation, and CSV export.

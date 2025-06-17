@@ -49,13 +49,7 @@ DB_NAME=your-database
 # 4. Run the app
 streamlit run MySQLQueryGenerator.py
 
-📦sql-genai-assistant/
- ┣ 📄 MySQLQueryGenerator.py
- ┣ 📄 requirements.txt
- ┣ 📄 .env ----> Unable to upload the file due to GitHub security restrictions.
- ┗ 📁 sample_data/
-     ┣ 📄 create_tables.sql
-     ┗ 📄 insert_data.sql
+![](https://github.com/veerababu558/genai-sql-assistant/blob/main/Screenshot%202025-06-16%20202219.png)
      
 # Example Queries to Try
 
